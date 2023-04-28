@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "830336257100",
+    "project_id": "firecloudchat-app-b62c3",
+    "storage_bucket": "firecloudchat-app-b62c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830336257100:android:d87f684cbe44d07cf578e9",
+        "android_client_info": {
+          "package_name": "com.example.firecloudchat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830336257100-8a8g6ed8prqnd4ehqnj78qqaa9u33bnr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoh36R24nioTHytM4LHZFNBfNmMYyzeoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830336257100-8a8g6ed8prqnd4ehqnj78qqaa9u33bnr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
