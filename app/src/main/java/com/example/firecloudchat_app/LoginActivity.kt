@@ -3,8 +3,10 @@ package com.example.firecloudchat_app
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ProgressBar
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
@@ -14,16 +16,23 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var edtPassword:EditText
     private lateinit var btnLogin:Button
     private lateinit var btnRegister:Button
-    lateinit var auth: FirebaseAuth
+    private lateinit var auth: FirebaseAuth
+    private lateinit var bar:ProgressBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+
+
+
         edtEmail = findViewById(R.id.mEdt_Email)
         edtPassword = findViewById(R.id.mEdt_Password)
         btnLogin = findViewById(R.id.mbtn_login)
         btnRegister = findViewById(R.id.mbtn_register)
+        bar = findViewById(R.id.progressBar)
+
+        bar.visibility = View.INVISIBLE
 
 
         auth = FirebaseAuth.getInstance()
@@ -40,6 +49,7 @@ class LoginActivity : AppCompatActivity() {
 
          var mail = edtEmail.text.toString().trim()
          var pass = edtPassword.text.toString().trim()
+            bar.visibility = View.VISIBLE
 
          //validate input
 
