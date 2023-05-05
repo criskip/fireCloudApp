@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FireCloudChat-App</string>
+    <string name="wave_emoji">U+1F44B;</string>
 </resources>

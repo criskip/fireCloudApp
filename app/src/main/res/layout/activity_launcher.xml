@@ -4,14 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/paper"
     tools:context=".Launcher">
 
+
     <TextView
-        android:textSize="20dp"
-        android:id="@+id/textView"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="WELCOME TO GREENPEEK"
-        tools:layout_editor_absoluteX="178dp"
-        tools:layout_editor_absoluteY="77dp" />
+        android:id="@+id/mtxtAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="Greenpeak is an app that enables you to locate the nearest goods and services that you require. You can also display your your profession or items that you are selling. A customer can be able to view your work and contact you."
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtxtWelcom" />
+
+    <TextView
+        android:id="@+id/mtxtThanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bungee"
+        android:text="Thank you for choosing us"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtxtAbout" />
+
+    <Button
+        android:id="@+id/mbtnProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Proceed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtxtThanks" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/mtxtWelcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/bungee"
+        android:text="Wecome to Greenpeak"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
