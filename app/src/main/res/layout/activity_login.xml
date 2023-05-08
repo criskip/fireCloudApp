@@ -4,60 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bag"
     tools:context=".LoginActivity">
 
     <EditText
         android:id="@+id/mEdt_Email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="65dp"
+        android:layout_width="230dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/design"
+        android:drawableLeft="@drawable/email"
         android:ems="10"
-        android:hint="Enter Email Address"
+        android:hint="Enter Email Adress"
         android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/mEdt_Password"
-        app:layout_constraintEnd_toEndOf="@+id/mEdt_Password" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
 
     <EditText
         android:id="@+id/mEdt_Password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="45dp"
+        android:layout_width="230dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/design"
+        android:drawableLeft="@drawable/lock"
         android:ems="10"
-        android:hint="Enter Passwordd"
+        android:hint="Enter Password"
         android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/mbtn_login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mEdt_Email" />
 
     <Button
         android:id="@+id/mbtn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#0B5CD8"
         android:text="Login"
         app:layout_constraintBottom_toTopOf="@+id/mbtn_register"
-        app:layout_constraintEnd_toEndOf="@+id/mbtn_register" />
+        app:layout_constraintStart_toStartOf="@+id/mbtn_register"
+        app:layout_constraintTop_toBottomOf="@+id/mEdt_Password" />
 
     <Button
         android:id="@+id/mbtn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="235dp"
+        android:layout_marginBottom="254dp"
+        android:backgroundTint="#0B5CD8"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mbtn_login" />
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/mEdt_Email"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

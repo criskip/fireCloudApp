@@ -4,8 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ProgressBar
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.ktx.Firebase
@@ -16,6 +18,7 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var edt_email:EditText
     private lateinit var edt_password:EditText
     private lateinit var btn_createAccount:Button
+    private lateinit var pgbar:ProgressBar
 
     //initialize firebase
     lateinit var auth:FirebaseAuth
@@ -28,6 +31,9 @@ class RegisterActivity : AppCompatActivity() {
         edt_email = findViewById(R.id.email_edt)
         edt_password = findViewById(R.id.password_edt)
         btn_createAccount = findViewById(R.id.mbtn_createAcc)
+        pgbar = findViewById(R.id.progressBar2)
+
+        pgbar.visibility = View.INVISIBLE
 
         //initialize firebase again
         auth = FirebaseAuth.getInstance()
@@ -37,6 +43,8 @@ class RegisterActivity : AppCompatActivity() {
           var name = edt_name.text.toString().trim()
           var email = edt_email.text.toString().trim()
           var password = edt_password.text.toString().trim()
+
+            pgbar.visibility = View.VISIBLE
 
           //validate your input
 

@@ -4,52 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wel"
     tools:context=".RegisterActivity">
 
     <EditText
         android:id="@+id/mEdt_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="69dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="74dp"
+        android:background="@drawable/design"
+        android:drawableLeft="@drawable/abc"
         android:ems="10"
         android:hint="Enter full name"
         android:inputType="text"
         android:text=""
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/email_edt"
-        app:layout_constraintStart_toStartOf="@+id/email_edt" />
+        app:layout_constraintEnd_toEndOf="@+id/password_edt"
+        app:layout_constraintStart_toStartOf="@+id/password_edt"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
 
     <EditText
         android:id="@+id/email_edt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="63dp"
+        android:layout_width="230dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/design"
+        android:drawableLeft="@drawable/email"
         android:ems="10"
         android:hint="Enter email"
         android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/password_edt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/mEdt_name" />
 
     <EditText
         android:id="@+id/password_edt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="333dp"
+        android:layout_width="230dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/design"
+        android:drawableLeft="@drawable/lock"
         android:ems="10"
         android:hint="Enter password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/email_edt" />
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/mbtn_createAcc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_edt" />
 
     <Button
         android:id="@+id/mbtn_createAcc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="23dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="233dp"
+        android:backgroundTint="#0850DD"
         android:text="Create Account"
-        app:layout_constraintEnd_toEndOf="@+id/password_edt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/password_edt"
         app:layout_constraintTop_toBottomOf="@+id/password_edt" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/mEdt_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
