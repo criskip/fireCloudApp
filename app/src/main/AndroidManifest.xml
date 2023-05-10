@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -16,10 +15,13 @@
         android:theme="@style/Theme.FireCloudChatApp"
         tools:targetApi="31">
         <activity
-            android:name=".Professions"
+            android:name=".UserActivity"
             android:exported="false" />
         <activity
-            android:name=".Launcher"
+            android:name=".DisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,29 +30,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CameraActivity"
+            android:name=".Launcher"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

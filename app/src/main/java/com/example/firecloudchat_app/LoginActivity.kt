@@ -59,8 +59,8 @@ class LoginActivity : AppCompatActivity() {
              auth.signInWithEmailAndPassword(mail, pass).addOnCompleteListener(this){
                  if (it.isSuccessful){
                      Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
-                     var gotomain = Intent(this, MainActivity::class.java)
-                     startActivity(gotomain)
+                     var gotodisplay = Intent(this, DisplayActivity::class.java)
+                     startActivity(gotodisplay)
                      finish()
                  }else{
                      Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
