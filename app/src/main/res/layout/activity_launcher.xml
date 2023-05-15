@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="20dp"
-        android:text="Greenpeak is an app that enables you to locate the nearest goods and services that you require. You can also display your your profession or items that you are selling. A customer can be able to view your work and contact you."
+        android:text="Greenpeak is an app that enables you to locate the nearest goods and services around you. Here you will find people with different proffesions that will give you quality goods and services when you contact them."
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"

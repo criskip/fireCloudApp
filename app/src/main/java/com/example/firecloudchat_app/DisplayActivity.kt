@@ -26,12 +26,12 @@ class DisplayActivity : AppCompatActivity() {
 
         val name = arrayOf(
             "Chris Kemboi",
-            "Selina",
-            "Jay",
-            "Rodgers",
-            "Rachel",
-            "Kennedy",
-            "Elizabeth"
+            "Selina Wavua",
+            "Jay Mwinyi",
+            "Rodgers Mwafungo",
+            "Rachel Mugure",
+            "Kennedy Njoroge",
+            "Elizabeth Cherono"
         )
 
         val message = arrayOf(

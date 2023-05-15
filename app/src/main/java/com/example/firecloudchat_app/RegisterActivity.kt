@@ -57,8 +57,8 @@ class RegisterActivity : AppCompatActivity() {
                   if(it.isSuccessful){
                       Toast.makeText(this, "User created successfully", Toast.LENGTH_SHORT).show()
 
-                      var gotologin = Intent(this,LoginActivity::class.java)
-                      startActivity(gotologin)
+                      var gotodisplay = Intent(this,DisplayActivity::class.java)
+                      startActivity(gotodisplay)
                   } else{
                       Log.d("TAG","Error---->", it.exception)
 
